@@ -8,7 +8,7 @@ import ModuleRoutes from "./Kanbas/Modules/routes.js";
 import CourseRoutes from "./Kanbas/Courses/routes.js";
 import UserRoutes from "./Users/routes.js";
 
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
+const CONNECTION_STRING = /*process.env.DB_CONNECTION_STRING || */'mongodb://127.0.0.1:27017/kanbas';
 console.log(CONNECTION_STRING);
 mongoose.connect(CONNECTION_STRING);
 const app = express()
